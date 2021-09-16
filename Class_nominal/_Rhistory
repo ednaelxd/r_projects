@@ -1,0 +1,512 @@
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+help("return")
+help(getOption("max.print"))
+help(getOption
+)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2,getOption("max.print",80)){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2)){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2)){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+options(max.print=10000)
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+options(max.print=10000)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2)){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+options(max.print=10000)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-1,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-1,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i+4*u-i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i+4*u-i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(c in 1:colunas_classes){
+for(l in 1:linhas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-0
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(l in 1:linhas_classes){
+for(c in 1:colunas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-1
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(l in 1:linhas_classes){
+for(c in 1:colunas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[u,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[u,c]<-0
+}
+}
+}
+u=u+1
+print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+options(max.print=10000)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-1
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(l in 1:linhas_classes){
+for(c in 1:colunas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[i,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[i,c]<-0
+}
+}
+}
+#u=u+1
+#print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+dados_lucas
+pesos_lucas
+classes_lucas
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-1
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(l in 1:linhas_classes){
+for(c in 1:colunas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[l,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[l,c]<-0
+}
+}
+}
+#u=u+1
+#print(u)
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
+class_nominal<-function(x,w,b,coef_preferencia=5,coef_indiferencia=2){
+#x=matriz de dados
+#w=matriz de pesos
+#b=matriz de classes
+l<-1
+c<-1
+u<-1
+linhas_classes<-length(b[,1])#salva numero de linhas da matriz das classes
+linhas_dados<-length(x[,1])#salva numero de linhas da matriz de dados
+colunas_dados<-length(x[1,])
+colunas_classes<-length(b[1,])
+if(colnames(x)!=colnames(w) || colnames(x)!=colnames(b) || colnames(w)!=colnames(b)){
+print("Número de Dimensões das entradas diferentes")
+return(0)
+}
+######Fluxo positivo#######
+matriz_de_fluxos<-matrix(1,linhas_dados*linhas_classes,colunas_classes)  #criação da matriz de fluxos
+#Calculos dos fluxos POSITIVOS
+for(i in 1:linhas_dados){
+for(l in 1:linhas_classes){
+for(c in 1:colunas_classes){
+if((x[i,c]-b[l,c])>coef_preferencia){
+matriz_de_fluxos[u,c]<-1
+}
+if((x[i,c]-b[l,c])<=coef_indiferencia){
+matriz_de_fluxos[u,c]<-0
+}
+}
+u=u+1
+}
+}
+#Calculo dos fluxos NEGATIVOS
+return(matriz_de_fluxos)
+}
+class_nominal(dados_lucas,pesos_lucas,classes_lucas)
