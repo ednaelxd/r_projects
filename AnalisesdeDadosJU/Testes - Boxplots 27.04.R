@@ -1,4 +1,4 @@
-##HIP”TESE 5.1
+##HIP√ìTESE 5.1
 
 wilcox.test( Severidade_Micro_Interno,Severidade_Pequenas_Interno,alt="less")
 wilcox.test( Severidade_Micro_Interno,Severidade_Pequenas_Interno,alt="greater")
@@ -6,7 +6,7 @@ wilcox.test( Severidade_Micro_Interno,Severidade_Pequenas_Interno,alt="greater")
 wilcox.test( Severidade_Pequenas_Interno, Severidade_Micro_Interno,alt="less")
 wilcox.test( Severidade_Pequenas_Interno, Severidade_Micro_Interno,alt="greater")
 
-##HIP”TESE 5.2
+##HIP√ìTESE 5.2
 
 wilcox.test(Severidade_Micro_Externo, Severidade_Pequenas_Externo,alt="less")
 wilcox.test(Severidade_Micro_Externo, Severidade_Pequenas_Externo,alt="greater")
@@ -15,18 +15,18 @@ wilcox.test(Severidade_Pequenas_Externo,Severidade_Micro_Externo,alt="less")
 wilcox.test(Severidade_Pequenas_Externo,Severidade_Micro_Externo,alt="greater")
 
 
-##HIP”TESE 6.1
+##HIP√ìTESE 6.1
 
-wilcox.test( DetecÁ„o_Pequenas_Interno, DetecÁ„o_Micro_Interno ,alt="less")
-wilcox.test( DetecÁ„o_Pequenas_Interno, DetecÁ„o_Micro_Interno,alt="greater")
+wilcox.test( Detec√ß√£o_Pequenas_Interno, Detec√ß√£o_Micro_Interno ,alt="less")
+wilcox.test( Detec√ß√£o_Pequenas_Interno, Detec√ß√£o_Micro_Interno,alt="greater")
 
-##HIP”TESE 6.2
+##HIP√ìTESE 6.2
 
-wilcox.test( DetecÁ„o_Pequenas_Externo,DetecÁ„o_Micro_Externo,alt="less")
-wilcox.test( DetecÁ„o_Pequenas_Externo,DetecÁ„o_Micro_Externo,alt="greater")
+wilcox.test( Detec√ß√£o_Pequenas_Externo,Detec√ß√£o_Micro_Externo,alt="less")
+wilcox.test( Detec√ß√£o_Pequenas_Externo,Detec√ß√£o_Micro_Externo,alt="greater")
 
 
-##HIP”TESE 3
+##HIP√ìTESE 3
 
 wilcox.test(  empre_consu_micro222,empre_consu_pequenas222, alt="greater")
 wilcox.test(  empre_consu_micro222,empre_consu_pequenas222, alt="less")
@@ -34,7 +34,7 @@ wilcox.test(  empre_consu_micro222,empre_consu_pequenas222, alt="less")
 
 #############################BOXPLOTS#####################################
 
-##BOXPLOT 1 - AvaliaÁ„o da Gest„o de Riscos
+##BOXPLOT 1 - Avalia√ß√£o da Gest√£o de Riscos
 
 boxplot(c(AnaliseRiscoMicro222),c(AnaliseRiscoPequenas222),ylab="Risk management assessment",
 ylim=c(0,5),names=c("Microcompanies","Small companies"),xlab="Company size",las=1,
@@ -42,7 +42,7 @@ boxwex=0.7,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 35","p-value = 0.0252"),bty="n")
 
 
-##BOXPLOT 2 - AvaliaÁ„o do Relacionamento com os fornecedores
+##BOXPLOT 2 - Avalia√ß√£o do Relacionamento com os fornecedores
 
 boxplot(c(empre_forne_micro222),c(empre_forne_pequena222),ylab="Relationship assessment with suppliers",
 ylim=c(0,5),names=c("Micro companies","Small companies"),xlab="Company size",las=1,
@@ -50,7 +50,7 @@ boxwex=0.7,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 48.5","p-value = 0.1318"),bty="n")
 
 
-##BOXPLOT 3 - AvaliaÁ„o do Relacionamento com os clientes
+##BOXPLOT 3 - Avalia√ß√£o do Relacionamento com os clientes
 
 
 boxplot(c(empre_consu_micro222),c(empre_consu_pequenas222),ylab="Relationship assessment with clients",
@@ -59,7 +59,7 @@ boxwex=0.7,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 63","p-value = 0.4373"),bty="n")
 
 
-##BOXPLOT 4 - AvaliaÁ„o da Ocorrencia de Riscos INTERNOS e EXTERNOS
+##BOXPLOT 4 - Avalia√ß√£o da Ocorrencia de Riscos INTERNOS e EXTERNOS
 
 par(mfrow=c(1,2))
 #INTERNO
@@ -77,7 +77,7 @@ boxwex=0.4,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 66","p-value = 0.5131"),bty="n")
 
 
-##BOXPLOT 5 - AvaliaÁ„o da Severidade de Riscos INTERNOS e EXTERNOS
+##BOXPLOT 5 - Avalia√ß√£o da Severidade de Riscos INTERNOS e EXTERNOS
 
 par(mfrow=c(1,2))
 #INTERNO
@@ -95,93 +95,93 @@ boxwex=0.4,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 67","p-value = 0.539"),bty="n")
 
 
-##BOXPLOT 6 - AvaliaÁ„o da Dificuldade de DetecÁ„o dos Riscos INTERNOS e EXTERNOS
+##BOXPLOT 6 - Avalia√ß√£o da Dificuldade de Detec√ß√£o dos Riscos INTERNOS e EXTERNOS
 
 par(mfrow=c(1,2))
 #INTERNO
-boxplot(c(DetecÁ„o_Micro_Interno),c(DetecÁ„o_Pequenas_Interno),
+boxplot(c(Detec√ß√£o_Micro_Interno),c(Detec√ß√£o_Pequenas_Interno),
 ylab="Assessment of the difficulty of detecting internal risks",
 ylim=c(0,5),names=c("Micro companies","Small companies"),xlab="Company size",las=1,
 boxwex=0.4,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 66","p-value = 0.513"),bty="n")
 
 #EXTERNO
-boxplot(c(DetecÁ„o_Micro_Externo),c(DetecÁ„o_Pequenas_Externo),
+boxplot(c(Detec√ß√£o_Micro_Externo),c(Detec√ß√£o_Pequenas_Externo),
 ylab="Assessment of the difficulty of detecting external risks",
 ylim=c(0,5),names=c("Micro companies","Small companies"),xlab="Company size",las=1,
 boxwex=0.4,frame.plot=T)
 legend(1.75,0.75,legend=c("W = 59","p-value = 0.3319"),bty="n")
 
-####GR¡FICOS DE DISPERS√O#######
+####GR√ÅFICOS DE DISPERS√ÉO#######
 
-HipÛtese 7 - Gest„o de Riscos x Ocorrencia de Rupturas Internas/Externas
+Hip√≥tese 7 - Gest√£o de Riscos x Ocorrencia de Rupturas Internas/Externas
 
 par(mfrow=c(2,2))
 #(1,1)Microempresas - Griscos x Ocorrencias INternas
 plot(AnaliseRiscoMicro222,Ocorrencia_Micros_Interno,ylim=c(0,5),xlim=c(1,5),
-ylab="AvaliaÁ„o da ocorrencia de riscos internos",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="Avalia√ß√£o da ocorrencia de riscos internos",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(2.5,0.75,legend=c("? = -0.1131455"),bty="n")
 
 #(1,2)Pequenas empresas - Griscos x Ocorrencias INternas
 plot(AnaliseRiscoPequenas222,Ocorrencia_Pequenas_Interno,ylim=c(0,5),xlim=c(1,5),
-ylab="",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(2.5,0.75,legend=c("? = -0.1405564"),bty="n")
 
 #(2,1)Microempresas - Griscos x Ocorrencias EXternas
 plot(AnaliseRiscoMicro222,Ocorrencia_Micros_Externo,ylim=c(0,5),xlim=c(1,5),
-ylab="AvaliaÁ„o da ocorrencia de riscos externos",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="Avalia√ß√£o da ocorrencia de riscos externos",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(2.5,0.75,legend=c("? = -0.3459258"),bty="n")
 
 #(2,2)Pequenas empresas - Griscos x Ocorrencias EXternas
 plot(AnaliseRiscoPequenas222,Ocorrencia_Pequenas_Externo,ylim=c(0,5),xlim=c(1,5),
-ylab="",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(2.5,0.75,legend=c("? = 0.2666667"),bty="n")
 
 
 
-HipÛtese 8 - Gest„o de Riscos x Relacionamento com os fornecedores
+Hip√≥tese 8 - Gest√£o de Riscos x Relacionamento com os fornecedores
 
 par(mfrow=c(1,2))
 #(1,1)Microempresas - Griscos x Relacionamento com os fornecedores
 plot(AnaliseRiscoMicro222,empre_forne_micro222,ylim=c(0,5),xlim=c(1,5),
-ylab="AvaliaÁ„o do relacionamento com os fornecedores",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="Avalia√ß√£o do relacionamento com os fornecedores",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(3,0.75,legend=c("? = 0.02238946"),bty="n")
 
 #(1,2)Pequenas empresas - Griscos x Relacionamento com os fornecedores
 plot(AnaliseRiscoPequenas222,empre_forne_pequena222,ylim=c(0,5),xlim=c(1,5),
-ylab="",xlab="AvaliaÁ„o da gest„o de riscos",las=1)
+ylab="",xlab="Avalia√ß√£o da gest√£o de riscos",las=1)
 legend(3,0.75,legend=c("? = 0.3853132"),bty="n")
 
-HipÛtese 9 - Relacionamento com os fornecedores x N∫ de fornecedores
+Hip√≥tese 9 - Relacionamento com os fornecedores x N¬∫ de fornecedores
 
 par(mfrow=c(1,2))
-#(1,1)Microempresas - Relacionamento com os fornecedores x N∫ de fornecedores
+#(1,1)Microempresas - Relacionamento com os fornecedores x N¬∫ de fornecedores
 plot(empre_forne_micro222,N_forne_micro,ylim=c(0,5),xlim=c(1,5),
-ylab="Quantidade de fornecedores",xlab="AvaliaÁ„o do relacionamento com os fornecedores",las=1)
+ylab="Quantidade de fornecedores",xlab="Avalia√ß√£o do relacionamento com os fornecedores",las=1)
 legend(3,0.75,legend=c("? = -0.4003079"),bty="n")
 
-#(1,2)Pequenas empresas - Relacionamento com os fornecedores x N∫ de fornecedores
+#(1,2)Pequenas empresas - Relacionamento com os fornecedores x N¬∫ de fornecedores
 plot(empre_forne_pequena222,N_forne_pequena,ylim=c(0,5),xlim=c(1,5),
-ylab="",xlab="AvaliaÁ„o do relacionamento com os fornecedores",las=1)
+ylab="",xlab="Avalia√ß√£o do relacionamento com os fornecedores",las=1)
 legend(3,0.75,legend=c("? = 0"),bty="n")
 
-HipÛtese 10 - Relacionamento com os fornecedores x Compartilhamento de infomaÁıes
+Hip√≥tese 10 - Relacionamento com os fornecedores x Compartilhamento de infoma√ß√µes
 
 par(mfrow=c(1,2))
 #(1,1)Microempresas - Relacionamento com os fornecedores x comp info
 plot(empre_forne_micro222,comp_info_micro,ylim=c(0,5),xlim=c(1,5),
-ylab="AvaliaÁ„o quanto ao compartilhamento de informaÁıes",xlab="AvaliaÁ„o do relacionamento com os fornecedores",las=1)
+ylab="Avalia√ß√£o quanto ao compartilhamento de informa√ß√µes",xlab="Avalia√ß√£o do relacionamento com os fornecedores",las=1)
 legend(3,0.75,legend=c("? = -0.2537765"),bty="n")
 
-#(1,2)Pequenas empresas - Relacionamento com os fornecedores x N∫ de fornecedores
+#(1,2)Pequenas empresas - Relacionamento com os fornecedores x N¬∫ de fornecedores
 plot(empre_forne_pequena222,comp_info_pequena,ylim=c(0,5),xlim=c(1,5),
-ylab="",xlab="AvaliaÁ„o do relacionamento com os fornecedores",las=1)
+ylab="",xlab="Avalia√ß√£o do relacionamento com os fornecedores",las=1)
 legend(3,0.75,legend=c("? = -0.2692341"),bty="n")
 
 
 
 Npf<-c("mais de 20","mais de 20","mais de 20","mais de 20","mais de 20",
-"de 10 ‡ 20","de 10 ‡ 20","de 10 ‡ 20","mais de 20","de 2 ‡ 10","de 10 ‡ 20")
+"de 10 √† 20","de 10 √† 20","de 10 √† 20","mais de 20","de 2 √† 10","de 10 √† 20")
 
 
 
