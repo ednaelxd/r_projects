@@ -1,15 +1,15 @@
 Organiza_por_tamanho<-function(x,y){
 
-#x é a matriz coluna que contém o tamanho das empresas, onde:
+#x Ã© a matriz coluna que contÃ©m o tamanho das empresas, onde:
 #1= micro empresa
 #2= empresa pequena
-#3= empresa média
+#3= empresa mÃ©dia
 #4= empresa grande
 
-#y é a matriz que contem uma informação relativa ao mesmo par [i,j] de x
-#as matrizes abaixo receberão os itens correspondentes de y para cada tipo de empresa
+#y Ã© a matriz que contem uma informaÃ§Ã£o relativa ao mesmo par [i,j] de x
+#as matrizes abaixo receberÃ£o os itens correspondentes de y para cada tipo de empresa
 
-grandes_médias<-matrix(nrow=24)	
+grandes_mÃ©dias<-matrix(nrow=24)	
 pequenas_micro<-matrix(nrow=24)
 
 #contadores
@@ -17,7 +17,7 @@ k=1
 l=1
 
 
-A <-"Parâmetros com tamanhos distintos"
+A <-"ParÃ¢metros com tamanhos distintos"
 
 if (length(x[,1])==length(y[,1])){
 
@@ -28,18 +28,18 @@ if (length(x[,1])==length(y[,1])){
 		k<-k+1
 		}
 	if (x[i,1]==3 || x[i,1]==4){
-		grandes_médias[l,1]<-y[i,1];
+		grandes_mÃ©dias[l,1]<-y[i,1];
 		l<-l+1
 		}
 	
 	}
-	MatrizDividida<-cbind(pequenas_micro,grandes_médias)
+	MatrizDividida<-cbind(pequenas_micro,grandes_mÃ©dias)
 	return(MatrizDividida)
 
 }else (return(A))
 
 }
-#CONDIÇÃO COMPLICADA#
+#CONDIÃ‡ÃƒO COMPLICADA#
 if(x[i,1]==NA){s=1}
 resolvida, substituindo os valores de NA por 0 em dados$X8EM
 
