@@ -1,22 +1,22 @@
-#############Para Micro e Pequenas - Correlação de Spearman###################
+#############Para Micro e Pequenas - CorrelaÃ§Ã£o de Spearman###################
 A= tratamento para MICRO empresas
 B= tratamento para PEQUENAS empresas
 
-##PROP 1-> Correlação entre a gestão de Risco e Ocorrencias de Riscos INTERNOS
+##PROP 1-> CorrelaÃ§Ã£o entre a gestÃ£o de Risco e Ocorrencias de Riscos INTERNOS
 
 #Prop 1A -> 
 cor.test ( AnaliseRiscoMicro222, Ocorrencia_Micros_Interno, method="spearman")
 #Prop 1B ->
 cor.test ( AnaliseRiscoPequenas222, Ocorrencia_Pequenas_Interno, method="spearman")
 
-##Prop 2-> Correlação entre a gestão de Risco e Ocorrencias de Riscos EXTERNOS
+##Prop 2-> CorrelaÃ§Ã£o entre a gestÃ£o de Risco e Ocorrencias de Riscos EXTERNOS
 
 #Prob 2A-> 
 cor.test ( AnaliseRiscoMicro222, Ocorrencia_Micros_Externo, method="spearman")
 #Prop 2B->
 cor.test ( AnaliseRiscoPequenas222, Ocorrencia_Pequenas_Externo, method="spearman")
 
-##Prop 3-> Correlação entre a Gestão de Riscos e a Rel. c/ os fornecedores
+##Prop 3-> CorrelaÃ§Ã£o entre a GestÃ£o de Riscos e a Rel. c/ os fornecedores
 
 #Prop 3A ->
 cor.test ( AnaliseRiscoMicro222, empre_forne_micro222 , method="spearman")
@@ -25,7 +25,7 @@ cor.test ( AnaliseRiscoMicro222, empre_forne_micro222 , method="spearman")
 cor.test ( AnaliseRiscoPequenas222, empre_forne_pequena222, method="spearman")
 
 
-##Prop 4-> Correlação entre Rel. c/fornecedores e Nº de fornecedores(Q.17)
+##Prop 4-> CorrelaÃ§Ã£o entre Rel. c/fornecedores e NÂº de fornecedores(Q.17)
 
 #Prop 4A-> 
 cor.test ( empre_forne_micro222, N_forne_micro, method="spearman")
@@ -34,7 +34,7 @@ cor.test ( empre_forne_micro222, N_forne_micro, method="spearman")
 cor.test ( empre_forne_pequena222, N_forne_pequena, method="spearman")
 
 
-##Prop 5-> Correlação entre Rel. c/fornecedores e Comp. de Infor. (Q.23.12)
+##Prop 5-> CorrelaÃ§Ã£o entre Rel. c/fornecedores e Comp. de Infor. (Q.23.12)
 
 #Prop 5A->
 cor.test ( empre_forne_micro222, comp_info_micro, method="spearman")
